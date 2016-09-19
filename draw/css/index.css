@@ -1,0 +1,109 @@
+.col-left,.col-middle,.col-right{
+    display: inline-block;
+    vertical-align: top;
+}
+.col-left{
+    width: 30%;
+}
+.col-middle{
+    width: 50%;
+}
+.col-right{
+    width: 18%;
+}
+.toolBar{
+    border-bottom: 3px solid #333333;
+    padding-bottom: 10px;       
+}
+.toolBar ul{
+    list-style: none;
+}
+.toolBar ul li{
+    display: inline-block;
+    margin-right: 50px;
+}
+.toolBar h2{
+    margin: 0;
+    padding: 5px 0;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.toolBar .line{
+    margin-top: 5px;
+}
+.toolBar label{
+    margin-right: 5px;
+    font-weight: bold;
+}
+.toolBar-each{
+    padding-left: 15px;
+    margin-top: 10px;
+}
+#selectSize{
+    display: inline-block;
+}
+.pen-color{
+    margin-top: 10px;
+}
+
+.operaterWrap a{
+    display: block;
+    padding-top: 35px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+.operaterWrap .undoBtn{
+    background:url(../images/undo.png) center 5px no-repeat;
+}
+.operaterWrap .redoBtn{
+    background:url(../images/redo.png) center 5px no-repeat;
+}
+.operaterWrap .resetDrawBtn{
+    background:url(../images/reset.png) center 0 no-repeat;
+}
+.operaterWrap .selectPicBtn{
+    background:url(../images/selectPic.png) center 0 no-repeat;
+}
+.operaterWrap .saveAsBtn{
+    background:url(../images/saveAs.png) center 0 no-repeat;
+}
+.operaterWrap .helpBtn{
+    background:url(../images/help.png) center 0 no-repeat;
+}
+#canvasDiv,#outputWrap{
+    border-bottom: 3px solid #333333;
+    padding-bottom: 10px;
+}
+#canvas,#outputImg{
+    border: 1px solid #00FF00;
+    width: 500px;
+    padding: 5px;
+}
+#canvas{
+    display: block;
+    margin: 10px auto;
+}
+#outputImg{
+    display: inline-block;
+}
+.saveAs-tip{
+    border: 3px dashed #0000FF;
+    border-radius: 10px 10px 10px 10px;
+    display: inline-block;
+    margin-left: 20px;
+    padding: 10px;
+    width: 150px;
+    vertical-align: top;
+}
+
+#outputWrap h2{
+
+}
+#outputWrap .cont-wrap{
+   width: 750px;
+   margin:0 auto; 
+}

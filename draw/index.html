@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>蜡笔画图</title>
+	<link rel="stylesheet" href="css/spectrum.css" />
+	<link rel="stylesheet" href="css/nouislider.fox.css" />
+	<link rel="stylesheet" href="css/nouislider.space.css" />
+	<link rel="stylesheet" href="css/index.css" />
+	
+</head>
+<body>
+	<div class="toolBar">
+		<div class="col-left noUiSliderTheme-fox">
+			<h2 class="">画笔</h2>
+			<div class="toolBar-each">
+				<div class="line">
+					<label>粗细</label>
+					<span id="slectSizeShow"></span>
+					<div id = "selectSize" class="noUiSlider"></div>
+				</div>
+				<div class="pen-color line">
+					<label>颜色</label>
+					<input id = "colorPicker" color="#f00"/>
+				</div>
+				
+			</div>
+			
+		</div>
+		<div class="col-middle">
+			<h2 class="">操作</h2>
+			<div class="toolBar-each operaterWrap">
+				<ul>
+					<li><a href="javascript:void(0);" class="undoBtn">撤销</a></li>
+					<li><a href="javascript:void(0);" class="redoBtn">反撤销</a></li>
+					<li><a href="javascript:void(0);" class="resetDrawBtn">重画</a></li>
+					<li><a href="javascript:void(0);" class="selectPicBtn">选图</a></li>
+					<li><a href="#outputImg" class="saveAsBtn">另存为</a></li>
+					<li><a href="javascript:void(0);" class="helpBtn">帮助</a></li>
+				</ul>
+			</div>
+			
+		</div>
+		<div class="col-right">
+			<h2 class="">工具</h2>
+			<div class="toolBar-each">
+				<label>
+					蜡笔<input type= "radio" name="penType" value = "labi" checked="checked">
+				</label>
+				<label>
+					橡皮擦<input type= "radio" name="penType" value = "eraser">
+				</label>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+	
+	
+	
+	
+	<div id = "canvasDiv"></div>
+	<div id = "outputWrap">
+		<h2>作品生成区</h2>
+		<div class="cont-wrap">
+			<img id= "outputImg" alt="点击另存为按钮，并在该图片上右击另存为，保存该图片"/>
+			<label class="saveAs-tip">在左图上右击另存为，保存你的作品^_^</label>
+		</div>
+	<div>
+	
+
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+	<!--[if IE]><script type="text/javascript" src="vender/excanvas.js"></script><![endif]-->
+	<script type="text/javascript" src="vender/spectrum.js"></script>
+	<script type="text/javascript" src="vender/jquery.nouislider.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
